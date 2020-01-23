@@ -53,10 +53,23 @@ $ yarn link
 $ yarn link spectacle-mdx-loader
 
 # Check all MDX examples per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#examples
-$ yarn start
+$ yarn start:examples
+
+# (In another shell) Check mdx:5000, mdx+babel:5001
+$ open http://localhost:5000/ http://localhost:5001/
 
 # Check all MDX boilerplates per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#boilerplate
+$ yarn clean:boilerplate
+$ yarn boilerplate:generate
+$ yarn boilerplate:install
 $ yarn start:boilerplate
+
+# (In another shell) Check mdx:6300
+#
+# **Note**: These `yarn install` internally so will use latest published
+# `spectacle`, so results may be not entirely accurage. You may need to manually
+# update the installed contents in generated project `node_modules`.
+$ open http://localhost:6300/
 ```
 
 ### Testing
