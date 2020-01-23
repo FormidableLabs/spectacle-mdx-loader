@@ -16,13 +16,13 @@ $ yarn
 
 ### Examples
 
-#### `examples/loader-mdx`
+#### `examples/mdx`
 
-A vanilla webpack build using MDX slides found in `examples/loader-mdx/slides.mdx`.
+A vanilla webpack build using MDX slides found in `examples/mdx/slides.mdx`.
 
 ```sh
 # In one terminal open webpack dev server
-$ yarn start:loader-mdx
+$ yarn start:mdx
 
 # In another open a browser to 4000
 $ open http://localhost:4000/

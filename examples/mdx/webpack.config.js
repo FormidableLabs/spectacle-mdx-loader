@@ -54,5 +54,13 @@ module.exports = {
       title: 'Spectacle MDX Development Example',
       template: `./index.html`
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      // Add helper aliases needed when `yarn link spectacle` development
+      // is enabled to avoid duplicate libs that require singletons.
+      react: require.resolve('react'),
+      'react-dom': require.resolve('react-dom'),
+    }
+  }
 };

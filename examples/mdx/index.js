@@ -13,29 +13,36 @@ import {
   Notes,
   mdxComponentMap
 } from 'spectacle';
+// SPECTACLE_CLI_THEME_END
 
+// SPECTACLE_CLI_MDX_START
 import slides, { notes } from './slides.mdx';
 
-const MDXTest = () => (
+// SPECTACLE_CLI_THEME_START
+const theme = {};
+// SPECTACLE_CLI_MDX_END
+
+// SPECTACLE_CLI_TEMPLATE_START
+const template = () => (
+  <FlexBox
+    justifyContent="space-between"
+    position="absolute"
+    bottom={0}
+    width={1}
+  >
+    <Box padding="0 1em">
+      <FullScreen />
+    </Box>
+    <Box padding="1em">
+      <Progress />
+    </Box>
+  </FlexBox>
+);
+// SPECTACLE_CLI_TEMPLATE_END
+
+const Presentation = () => (
   <MDXProvider components={mdxComponentMap}>
-    <Deck
-      loop
-      template={() => (
-        <FlexBox
-          justifyContent="space-between"
-          position="absolute"
-          bottom={0}
-          width={1}
-        >
-          <Box padding="0 1em">
-            <FullScreen />
-          </Box>
-          <Box padding="1em">
-            <Progress />
-          </Box>
-        </FlexBox>
-      )}
-    >
+    <Deck loop theme={theme} template={template}>
       {slides
         .map((MDXSlide, i) => [MDXSlide, notes[i]])
         .map(([MDXSlide, MDXNote], i) => (
@@ -50,10 +57,4 @@ const MDXTest = () => (
   </MDXProvider>
 );
 
-/**
- * Experiment to test MDX -> JSX transpilation through babel.
- *
- * Outputs MDXDocument, changing MDXDocument will cause webpack
- * to hot-reload with new contents.
- */
-render(<MDXTest />, document.getElementById('root'));
+render(<Presentation />, document.getElementById('root'));

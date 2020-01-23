@@ -9,10 +9,10 @@
   "scripts": {
     "preversion": "yarn run check",
     "clean": "rimraf \"examples/*/dist\"",
-    "build:examples-loader-mdx": "webpack --config examples/loader-mdx/webpack.config.js",
-    "build:examples": "yarn build:examples-loader-mdx",
-    "start:loader-mdx": "webpack-dev-server --port=4000 --hot --config examples/loader-mdx/webpack.config.js",
-    "start": "yarn start:loader-mdx",
+    "build:examples-mdx": "webpack --config examples/mdx/webpack.config.js",
+    "build:examples": "yarn build:examples-mdx",
+    "start:mdx": "webpack-dev-server --port=4000 --hot --config examples/mdx/webpack.config.js",
+    "start": "yarn start:mdx",
     "lint": "eslint .",
     "check": "yarn lint",
     "check:ci": "yarn run check"
