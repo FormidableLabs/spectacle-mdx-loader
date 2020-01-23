@@ -16,6 +16,19 @@ $ yarn
 
 ### Examples
 
+#### Overview
+
+Our examples are spread out across multiple projects depending on where the core technology lies. We publish most of these to `npm` for use in `spectacle-cli` project to either use with the CLI (`spectacle`) or generate a fresh project boilerplte (`spectacle-boilerplate`).
+
+- `spectacle`
+    - [`examples/js`](https://github.com/FormidableLabs/spectacle/tree/master/examples/js)
+    - [`examples/md`](https://github.com/FormidableLabs/spectacle/tree/master/examples/md)
+    - [`examples/one-page`](https://github.com/FormidableLabs/spectacle/tree/master/examples/one-page.html)
+- `spectacle-mdx-loader`
+    - [`examples/mdx`](https://github.com/FormidableLabs/spectacle-mdx-loader/tree/master/examples/mdx)
+- `spectacle-cli`
+    - [`examples/cli-mdx-babel`](https://github.com/FormidableLabs/spectacle-mdx-loader/tree/master/examples/cli-mdx-babel): _Not published_
+
 #### `examples/mdx`
 
 A vanilla webpack build using MDX slides found in `examples/mdx/slides.mdx`.
@@ -26,6 +39,24 @@ $ yarn start:mdx
 
 # In another open a browser to 4000
 $ open http://localhost:4000/
+```
+
+### Examples integration with `spectacle-cli`
+
+`spectacle-cli` uses our `mdx` example in the CLI and boilerplate tools. To check that changes to these files don't break `spectacle-cli` upstream, check with something like the following:
+
+```sh
+# In `spectacle-mdx-loader` repo
+$ yarn link
+
+# In `spectacle-cli` repo
+$ yarn link spectacle-mdx-loader
+
+# Check all MDX examples per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#examples
+$ yarn start
+
+# Check all MDX boilerplates per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#boilerplate
+$ yarn start:boilerplate
 ```
 
 ### Testing
