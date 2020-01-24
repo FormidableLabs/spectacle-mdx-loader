@@ -13,14 +13,14 @@ import {
   Notes,
   mdxComponentMap
 } from 'spectacle';
-// SPECTACLE_CLI_THEME_END
 
 // SPECTACLE_CLI_MDX_START
 import slides, { notes } from './slides.mdx';
+// SPECTACLE_CLI_MDX_END
 
 // SPECTACLE_CLI_THEME_START
 const theme = {};
-// SPECTACLE_CLI_MDX_END
+// SPECTACLE_CLI_THEME_END
 
 // SPECTACLE_CLI_TEMPLATE_START
 const template = () => (
