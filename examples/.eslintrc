@@ -9,6 +9,7 @@ plugins:
 rules:
   quotes: ["error", "single", { allowTemplateLiterals: true }]
   object-property-newline: ["error", { allowAllPropertiesOnSameLine: true }]
+  react/no-multi-comp: "off"
   prettier/prettier: "error"
 
 settings:

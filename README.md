@@ -15,7 +15,7 @@ $ yarn add --dev spectacle-mdx-loader
 
 ## Usage
 
-To use this loader in a Spectacle presenation you need to configure webpack and then add the surrounding MDX Spectacle helper code. See a [full example](./examples/loader-mdx) for more details.
+To use this loader in a Spectacle presenation you need to configure webpack and then add the surrounding MDX Spectacle helper code. See a [full example](./examples/mdx) for more details.
 
 First, integrate into your `webpack.config.js` file:
 

@@ -16,16 +16,60 @@ $ yarn
 
 ### Examples
 
-#### `examples/loader-mdx`
+#### Overview
 
-A vanilla webpack build using MDX slides found in `examples/loader-mdx/slides.mdx`.
+Our examples are spread out across multiple projects depending on where the core technology lies. We publish most of these to `npm` for use in `spectacle-cli` project to either use with the CLI (`spectacle`) or generate a fresh project boilerplte (`spectacle-boilerplate`).
+
+- `spectacle`
+    - [`examples/js`](https://github.com/FormidableLabs/spectacle/tree/master/examples/js)
+    - [`examples/md`](https://github.com/FormidableLabs/spectacle/tree/master/examples/md)
+    - [`examples/one-page`](https://github.com/FormidableLabs/spectacle/tree/master/examples/one-page.html)
+- `spectacle-mdx-loader`
+    - [`examples/mdx`](https://github.com/FormidableLabs/spectacle-mdx-loader/tree/master/examples/mdx)
+- `spectacle-cli`
+    - [`examples/cli-mdx-babel`](https://github.com/FormidableLabs/spectacle-mdx-loader/tree/master/examples/cli-mdx-babel): _Not published_
+
+#### `examples/mdx`
+
+A vanilla webpack build using MDX slides found in `examples/mdx/slides.mdx`.
 
 ```sh
 # In one terminal open webpack dev server
-$ yarn start:loader-mdx
+$ yarn start:mdx
 
 # In another open a browser to 4000
 $ open http://localhost:4000/
+```
+
+### Examples integration with `spectacle-cli`
+
+`spectacle-cli` uses our `mdx` example in the CLI and boilerplate tools. To check that changes to these files don't break `spectacle-cli` upstream, check with something like the following:
+
+```sh
+# In `spectacle-mdx-loader` repo
+$ yarn link
+
+# In `spectacle-cli` repo
+$ yarn link spectacle-mdx-loader
+
+# Check all MDX examples per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#examples
+$ yarn start:examples
+
+# (In another shell) Check mdx:5000, mdx+babel:5001
+$ open http://localhost:5000/ http://localhost:5001/
+
+# Check all MDX boilerplates per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#boilerplate
+$ yarn clean:boilerplate
+$ yarn boilerplate:generate
+$ yarn boilerplate:install
+$ yarn start:boilerplate
+
+# (In another shell) Check mdx:6300
+#
+# **Note**: These `yarn install` internally so will use latest published
+# `spectacle`, so results may be not entirely accurage. You may need to manually
+# update the installed contents in generated project `node_modules`.
+$ open http://localhost:6300/
 ```
 
 ### Testing
