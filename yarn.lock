@@ -957,6 +957,11 @@ braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
+broadcastchannel-polyfill@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/broadcastchannel-polyfill/-/broadcastchannel-polyfill-1.0.0.tgz#3596eb8143d2446b349430fe6f146b6463902042"
+  integrity sha512-tYZ4RhUbWiK9XInSgTEWLzsVi2rERw2AQiPUPvpsXnuV8oNcceWPQJ58eSurQTZ+W3FQiVgp7hooMPlT+DDueA==
+
 brorand@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
@@ -5174,11 +5179,12 @@ spdy@^4.0.1:
     select-hose "^2.0.0"
     spdy-transport "^3.0.0"
 
-spectacle@^6.0.0-alpha.4:
-  version "6.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/spectacle/-/spectacle-6.0.0-alpha.4.tgz#15b5d297a30b5526ee1ac8c9444e6e9cac5be5bb"
-  integrity sha512-cytEP2SqiZSE6vrZmjjjB6HbiGZ0Lp/+m83s3FqvvS1vRerKHp852YORiAi0C3yUDCvy0o0lelIj1SBukDoCqg==
+spectacle@^6.0.0-alpha.8:
+  version "6.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/spectacle/-/spectacle-6.0.0-alpha.8.tgz#ba2c2958f535f513a6bbf2021492dfa88cf82f88"
+  integrity sha512-JFx6nY3NXdyc2xarhY2bQB6h9cpot78DaYlFLt4R903bvBS8yvlbd8jWJrM3oRzLZw2fUnwMwImons5sqV2dUw==
   dependencies:
+    broadcastchannel-polyfill "^1.0.0"
     history "^4.9.0"
     marksy "^8.0.0"
     normalize-newline "^3.0.0"
