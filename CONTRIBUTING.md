@@ -21,13 +21,13 @@ $ yarn
 Our examples are spread out across multiple projects depending on where the core technology lies. We publish most of these to `npm` for use in `spectacle-cli` project to either use with the CLI (`spectacle`) or generate a fresh project boilerplte (`spectacle-boilerplate`).
 
 - `spectacle`
-    - [`examples/js`](https://github.com/FormidableLabs/spectacle/tree/master/examples/js)
-    - [`examples/md`](https://github.com/FormidableLabs/spectacle/tree/master/examples/md)
-    - [`examples/one-page`](https://github.com/FormidableLabs/spectacle/tree/master/examples/one-page.html)
+    - [`examples/js`](https://github.com/FormidableLabs/spectacle/tree/main/examples/js)
+    - [`examples/md`](https://github.com/FormidableLabs/spectacle/tree/main/examples/md)
+    - [`examples/one-page`](https://github.com/FormidableLabs/spectacle/tree/main/examples/one-page.html)
 - `spectacle-mdx-loader`
-    - [`examples/mdx`](https://github.com/FormidableLabs/spectacle-mdx-loader/tree/master/examples/mdx)
+    - [`examples/mdx`](https://github.com/FormidableLabs/spectacle-mdx-loader/tree/main/examples/mdx)
 - `spectacle-cli`
-    - [`examples/cli-mdx-babel`](https://github.com/FormidableLabs/spectacle-mdx-loader/tree/master/examples/cli-mdx-babel): _Not published_
+    - [`examples/cli-mdx-babel`](https://github.com/FormidableLabs/spectacle-mdx-loader/tree/main/examples/cli-mdx-babel): _Not published_
 
 #### `examples/mdx`
 
@@ -52,13 +52,13 @@ $ yarn link
 # In `spectacle-cli` repo
 $ yarn link spectacle-mdx-loader
 
-# Check all MDX examples per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#examples
+# Check all MDX examples per https://github.com/FormidableLabs/spectacle-cli/blob/main/CONTRIBUTING.md#examples
 $ yarn start:examples
 
 # (In another shell) Check mdx:5000, mdx+babel:5001
 $ open http://localhost:5000/ http://localhost:5001/
 
-# Check all MDX boilerplates per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#boilerplate
+# Check all MDX boilerplates per https://github.com/FormidableLabs/spectacle-cli/blob/main/CONTRIBUTING.md#boilerplate
 $ yarn clean:boilerplate
 $ yarn boilerplate:generate
 $ yarn boilerplate:install
