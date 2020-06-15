@@ -21,9 +21,9 @@ $ yarn
 Our examples are spread out across multiple projects depending on where the core technology lies. We publish most of these to `npm` for use in `spectacle-cli` project to either use with the CLI (`spectacle`) or generate a fresh project boilerplte (`spectacle-boilerplate`).
 
 - `spectacle`
-    - [`examples/js`](https://github.com/FormidableLabs/spectacle/tree/master/examples/js)
-    - [`examples/md`](https://github.com/FormidableLabs/spectacle/tree/master/examples/md)
-    - [`examples/one-page`](https://github.com/FormidableLabs/spectacle/tree/master/examples/one-page.html)
+    - [`examples/js`](https://github.com/FormidableLabs/spectacle/tree/main/examples/js)
+    - [`examples/md`](https://github.com/FormidableLabs/spectacle/tree/main/examples/md)
+    - [`examples/one-page`](https://github.com/FormidableLabs/spectacle/tree/main/examples/one-page.html)
 - `spectacle-mdx-loader`
     - [`examples/mdx`](https://github.com/FormidableLabs/spectacle-mdx-loader/tree/main/examples/mdx)
 - `spectacle-cli`
