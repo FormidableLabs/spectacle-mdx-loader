@@ -52,13 +52,13 @@ $ yarn link
 # In `spectacle-cli` repo
 $ yarn link spectacle-mdx-loader
 
-# Check all MDX examples per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#examples
+# Check all MDX examples per https://github.com/FormidableLabs/spectacle-cli/blob/main/CONTRIBUTING.md#examples
 $ yarn start:examples
 
 # (In another shell) Check mdx:5000, mdx+babel:5001
 $ open http://localhost:5000/ http://localhost:5001/
 
-# Check all MDX boilerplates per https://github.com/FormidableLabs/spectacle-cli/blob/master/CONTRIBUTING.md#boilerplate
+# Check all MDX boilerplates per https://github.com/FormidableLabs/spectacle-cli/blob/main/CONTRIBUTING.md#boilerplate
 $ yarn clean:boilerplate
 $ yarn boilerplate:generate
 $ yarn boilerplate:install
