@@ -74,3 +74,8 @@ render(<Deck />, document.getElementById('root'));
 [webpack]: https://webpack.js.org/
 [Spectacle]: https://formidable.com/open-source/spectacle/
 [npx]: https://www.npmjs.com/package/npx
+
+
+## Maintenance Status
+
+**Active:** Formidable is actively working on this project, and we expect to continue for work for the foreseeable future. Bug reports, feature requests and pull requests are welcome.
