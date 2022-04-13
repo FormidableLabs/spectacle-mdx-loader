@@ -3,6 +3,7 @@ spectacle-mdx-loader
 
 [![npm version][npm_img]][npm_site]
 [![Travis Status][trav_img]][trav_site]
+[![Maintenance Status][maintenance-image]](#maintenance-status)
 
 An [MDX][] [webpack][] loader for [Spectacle][] presentation decks.
 
@@ -74,7 +75,7 @@ render(<Deck />, document.getElementById('root'));
 [webpack]: https://webpack.js.org/
 [Spectacle]: https://formidable.com/open-source/spectacle/
 [npx]: https://www.npmjs.com/package/npx
-
+[maintenance-image]: https://img.shields.io/badge/maintenance-active-green.svg?color=brightgreen&style=flat
 
 ## Maintenance Status
 
