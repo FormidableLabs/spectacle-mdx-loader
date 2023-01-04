@@ -1,5 +1,4 @@
-spectacle-mdx-loader
-====================
+[![spectacle-mdx-loader — Formidable, We build the modern web](https://raw.githubusercontent.com/FormidableLabs/spectacle-mdx-loader/main/spectacle-mdx-loader-Hero.png)](https://formidable.com/open-source/)
 
 [![npm version][npm_img]][npm_site]
 [![Travis Status][trav_img]][trav_site]
